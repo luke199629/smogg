@@ -1,3 +1,6 @@
-smog in metropolitans
-smiley face API
-dynamic city sound 
+1. smog in metropolitans
+2. smiley face API
+3. dynamic city sound 
+4. news broadcast on smog weather as the prelogue
+	(the mix of Chinese and English news)
+5. fun fact about smog
