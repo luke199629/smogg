@@ -1,0 +1,18 @@
+{
+  "name": "urbanjungle",
+  "paths": [
+    "static/app"
+  ],
+  "local": [
+    "streetview"
+  ],
+  "scripts": [
+    "static/app/index.js",
+    "static/app/streetview/utils/detector.js"
+  ],
+
+  "main": "static/app/index.js",
+
+  "dependencies": {
+  }
+}

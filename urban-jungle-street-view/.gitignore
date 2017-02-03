@@ -1,0 +1,17 @@
+._*
+.DS_Store
+npm-debug.log
+
+node_modules/
+components/
+
+/*.sublime-project
+*.sublime-workspace
+sftp-config*.json
+
+.sass-cache
+
+static/build
+build/*
+prod/*
+

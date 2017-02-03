@@ -1,0 +1,27 @@
+{
+  "name": "streetview",
+  "main": "index.js",
+  "paths": [
+
+  ],
+  "local": [
+
+  ],
+  "scripts": [
+    "nav.js",
+    "index.js",
+    "utils/detector.js"
+  ],
+  "styles": [
+    "map.css"
+  ],
+  "strings": [
+    "streetview_vs.glsl",
+    "streetview_fs.glsl"
+  ],
+  "dependencies": {
+    "component/raf": "*",
+    "component/emitter": "*"
+  }
+
+}
