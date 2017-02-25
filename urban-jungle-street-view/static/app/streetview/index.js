@@ -106,8 +106,8 @@ p.generateNature = function(){
   this.createClimbingFoliages();
   this.createPlants();
 
-  this.tree1.position.z = Math.random()*10-5;
-  this.tree2.position.z = Math.random()*10-5;
+  // this.tree1.position.z = Math.random()*10-5;
+  // this.tree2.position.z = Math.random()*10-5;
 
   if( !this.isIntro ) {
     this.fadeIn();
@@ -337,23 +337,23 @@ p.init3D = function(){
   this.ground.position.y = -20;
   this.scene.add(this.ground);
 
-  //tree
-  var treeTex = THREE.ImageUtils.loadTexture( imageFolder + 'tree.png' );
-  var tree = new THREE.Mesh( new THREE.PlaneGeometry(12.5,15,1,1), new THREE.MeshBasicMaterial({map:treeTex,side: THREE.DoubleSide,transparent:true}));
-  tree.position.set(40,0,5);
-  tree.lookAt(this.camera.position.clone());
-  this.scene.add(tree);
+  // //tree
+  // var treeTex = THREE.ImageUtils.loadTexture( imageFolder + 'tree.png' );
+  // var tree = new THREE.Mesh( new THREE.PlaneGeometry(12.5,15,1,1), new THREE.MeshBasicMaterial({map:treeTex,side: THREE.DoubleSide,transparent:true}));
+  // tree.position.set(40,0,5);
+  // tree.lookAt(this.camera.position.clone());
+  // this.scene.add(tree);
 
-  this.tree1 = tree;
+  // this.tree1 = tree;
 
-  //tree2
-  var treeTex = THREE.ImageUtils.loadTexture( imageFolder + 'tree2.png' );
-  var tree = new THREE.Mesh( new THREE.PlaneGeometry(13,20,1,1), new THREE.MeshBasicMaterial({map:treeTex,side: THREE.DoubleSide,transparent:true}));
-  tree.position.set(-40,0,0);
-  tree.lookAt(this.camera.position.clone());
-  this.scene.add(tree);
+  // //tree2
+  // var treeTex = THREE.ImageUtils.loadTexture( imageFolder + 'tree2.png' );
+  // var tree = new THREE.Mesh( new THREE.PlaneGeometry(13,20,1,1), new THREE.MeshBasicMaterial({map:treeTex,side: THREE.DoubleSide,transparent:true}));
+  // tree.position.set(-40,0,0);
+  // tree.lookAt(this.camera.position.clone());
+  // this.scene.add(tree);
 
-  this.tree2 = tree;
+  // this.tree2 = tree;
 
   //this.controller.handleResize();
 

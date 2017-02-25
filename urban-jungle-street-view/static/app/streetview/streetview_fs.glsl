@@ -26,13 +26,15 @@ void main() {
   vec3 diffuseTex0 = texture2D( texture0, vUv ).xyz;
   float grey = 1.0-(diffuseTex0.r + diffuseTex0.g + diffuseTex0.b)/3.0;
   //vec3 finalDiffuse = mix(diffuseTex0*vec3(0.8,0.9,0.8),vec3(0.8,0.9,0.8),diffuseTex2*diffuseTex2*0.1);
-  vec3 finalDiffuse = diffuseTex0*vec3(0.8,0.9,0.8);
+  vec3 finalDiffuse = diffuseTex0*vec3(1.0,1.0,204.0/255.0);
+
+  //diffuseTex0*vec3(0.8,0.9,0.8);
 
 
 
   float thres = 1.0-step(0.1,diffuseTex1.b);
   //vec4(diffuseTex1,1.0);
-  gl_FragColor = vec4( finalDiffuse,1.0-DiffuseTerm*(1.0-diffuseTex2.x));
+  gl_FragColor = vec4( finalDiffuse,0.7-DiffuseTerm*(1.0-diffuseTex2.x));
 
 
   //float depth = gl_FragCoord.z / gl_FragCoord.w;

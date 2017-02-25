@@ -793,7 +793,7 @@ _depthLoader.onDepthLoad = function( buffers ) {
   pano.setNormalData(buffers.normalMap);
   pano.setNormalMap(normalCanvas);
 
-  pano.generateNature();
+  // pano.generateNature();
   pano.start();
   $streetview.removeClass('inactive');
 
