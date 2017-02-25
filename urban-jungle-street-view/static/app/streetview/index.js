@@ -509,29 +509,29 @@ p.onContainerTouchMove = function( event ) {
 
 p.onSceneClick = function(x,y){
 
-  var vector = new THREE.Vector3(x, y, 0.5);
-  var projector = new THREE.Projector();
-  projector.unprojectVector(vector, this.camera);
+//   var vector = new THREE.Vector3(x, y, 0.5);
+//   var projector = new THREE.Projector();
+//   projector.unprojectVector(vector, this.camera);
 
-  var raycaster = new THREE.Raycaster(this.camera.position, vector.sub(this.camera.position).normalize());
+//   var raycaster = new THREE.Raycaster(this.camera.position, vector.sub(this.camera.position).normalize());
 
-//test nav
-  var intersects = raycaster.intersectObjects(this.nav.markers);
-  if (intersects.length > 0) {
-    this.emit('panoLinkClicked', intersects[0].object.pano,intersects[0].object.description );
-    return;
-  }
+// //test nav
+//   var intersects = raycaster.intersectObjects(this.nav.markers);
+//   if (intersects.length > 0) {
+//     this.emit('panoLinkClicked', intersects[0].object.pano,intersects[0].object.description );
+//     return;
+//   }
 
-  intersects = raycaster.intersectObjects([this.mesh]);
-  if (intersects.length > 0) {
-    var normalizedPoint = intersects[0].point.clone().normalize();
-    var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
-    var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
+//   intersects = raycaster.intersectObjects([this.mesh]);
+//   if (intersects.length > 0) {
+//     var normalizedPoint = intersects[0].point.clone().normalize();
+//     var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
+//     var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
 
-    this.plotIn3D(intersects[0].point);
-    this.plotOnTexture(intersects[0].point);
-    //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
-  }
+//     this.plotIn3D(intersects[0].point);
+//     this.plotOnTexture(intersects[0].point);
+//     //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
+//   }
 
 }
 
