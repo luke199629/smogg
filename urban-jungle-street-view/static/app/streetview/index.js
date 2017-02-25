@@ -7,7 +7,8 @@ var DEG_TO_RAD = Math.PI/180;
 var MAP_WIDTH = 512;
 var MAP_HEIGHT = 256;
 
-var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
+// var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
+var imageFolder = '/Users/Luke/Documents/smogg/urban-jungle-street-view/static/assets/images/';
 //var shaderPath = 'http://s3.amazonaws.com/urbanjungle/shaders/';
 //var imageFolder = 'assets/images/'
 
@@ -327,7 +328,7 @@ p.init3D = function(){
   this.scene.add(this.foliageContainer);
 
   //ground
-  var mossTile = THREE.ImageUtils.loadTexture( imageFolder + 'moss-tile.jpg' );
+  var mossTile = THREE.ImageUtils.loadTexture( imageFolder + 'road.jpg' );
   mossTile.repeat.set(200,200);
   mossTile.wrapS = mossTile.wrapT = THREE.RepeatWrapping;
   mossTile.needsUpdate = true;
