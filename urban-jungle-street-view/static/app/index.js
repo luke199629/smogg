@@ -466,7 +466,7 @@ var styleArray = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#dfd2ae"
+        "color": "#94A0AA"
       }
     ]
   },

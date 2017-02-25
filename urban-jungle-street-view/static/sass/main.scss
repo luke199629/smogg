@@ -126,17 +126,35 @@
 
   }
 
+  .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+  }
 
   .choice-item {
-    pointer-events: auto;
-
     display:inline-block;
 
     border: 1px solid white;
-    padding:10px;
+
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    border-radius: 50%;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+
+    height: 100px;
+    width: 100px;
+
+    padding:50px;
     cursor: pointer;
+    margin-top:50px;
     margin-left:10px;
-    margin-top: 10px;
 
     &.choice-item--submit {
       margin-left:0px;
