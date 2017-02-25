@@ -79,7 +79,7 @@ module.exports = function(grunt) {
     // Install component.js dependencies.
     shell: {
       installcomponents: {
-        command: 'component install -f'
+        command: 'component install'
       }
     },
 

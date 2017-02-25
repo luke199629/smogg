@@ -20,8 +20,6 @@
     "streetview_fs.glsl"
   ],
   "dependencies": {
-    "component/raf": "*",
-    "component/emitter": "*"
   }
 
 }

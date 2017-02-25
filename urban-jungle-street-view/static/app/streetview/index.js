@@ -1,5 +1,5 @@
-var raf = require('raf');
-var Emitter = require('emitter');
+// var raf = require('raf');
+// var Emitter = require('emitter');
 var Nav = require('./nav');
 var detector = require('./utils/detector');
 
@@ -93,13 +93,13 @@ function PanoView(){
 
 var p = PanoView.prototype;
 
-Emitter(p);
+// Emitter(p);
 
 p.generateNature = function(){
 
-  if(this.rafId) {
-    raf.cancel( this.rafId);
-  }
+  // if(this.rafId) {
+  //   raf.cancel( this.rafId);
+  // }
 
   this.resetNature();
   this.createEdgeFoliage();
@@ -847,14 +847,14 @@ var delta;
 p.render = function(){
 
 
-  if( this.isRunning) {
+  // if( this.isRunning) {
 
-    /*if(this.rafId) {
-      raf.cancel( this.rafId);
-    }
-*/
-    this.rafId = raf(this.render);
-  }
+  //   if(this.rafId) {
+  //     raf.cancel( this.rafId);
+  //   }
+
+  //   this.rafId = raf(this.render);
+  // }
 
   this.renderer.autoClearColor = false;
 
