@@ -10,7 +10,9 @@
   "scripts": [
     "nav.js",
     "index.js",
-    "utils/detector.js"
+    "utils/detector.js",
+    "raf.js",
+    "emitter.js"
   ],
   "styles": [
     "map.css"

@@ -1,5 +1,5 @@
-// var raf = require('raf');
-// var Emitter = require('emitter');
+// var raf = require('./raf');
+var Emitter = require('./emitter');
 var Nav = require('./nav');
 var detector = require('./utils/detector');
 
@@ -93,7 +93,7 @@ function PanoView(){
 
 var p = PanoView.prototype;
 
-// Emitter(p);
+Emitter(p);
 
 p.generateNature = function(){
 
