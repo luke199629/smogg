@@ -523,16 +523,16 @@ p.onSceneClick = function(x,y){
     return;
   }
 
-  intersects = raycaster.intersectObjects([this.mesh]);
-  if (intersects.length > 0) {
-    var normalizedPoint = intersects[0].point.clone().normalize();
-    var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
-    var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
+  // intersects = raycaster.intersectObjects([this.mesh]);
+  // if (intersects.length > 0) {
+  //   var normalizedPoint = intersects[0].point.clone().normalize();
+  //   var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
+  //   var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
 
-    this.plotIn3D(intersects[0].point);
-    this.plotOnTexture(intersects[0].point);
-    //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
-  }
+  //   this.plotIn3D(intersects[0].point);
+  //   this.plotOnTexture(intersects[0].point);
+  //   //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
+  // }
 
 }
 
