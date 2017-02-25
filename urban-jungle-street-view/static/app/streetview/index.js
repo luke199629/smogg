@@ -7,7 +7,8 @@ var DEG_TO_RAD = Math.PI/180;
 var MAP_WIDTH = 512;
 var MAP_HEIGHT = 256;
 
-var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
+// var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
+var imageFolder = '/Users/Luke/Documents/smogg/urban-jungle-street-view/static/assets/images/';
 //var shaderPath = 'http://s3.amazonaws.com/urbanjungle/shaders/';
 //var imageFolder = 'assets/images/'
 
@@ -327,7 +328,7 @@ p.init3D = function(){
   this.scene.add(this.foliageContainer);
 
   //ground
-  var mossTile = THREE.ImageUtils.loadTexture( imageFolder + 'moss-tile.jpg' );
+  var mossTile = THREE.ImageUtils.loadTexture( imageFolder + 'road.jpg' );
   mossTile.repeat.set(200,200);
   mossTile.wrapS = mossTile.wrapT = THREE.RepeatWrapping;
   mossTile.needsUpdate = true;
@@ -522,16 +523,16 @@ p.onSceneClick = function(x,y){
     return;
   }
 
-  intersects = raycaster.intersectObjects([this.mesh]);
-  if (intersects.length > 0) {
-    var normalizedPoint = intersects[0].point.clone().normalize();
-    var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
-    var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
+  // intersects = raycaster.intersectObjects([this.mesh]);
+  // if (intersects.length > 0) {
+  //   var normalizedPoint = intersects[0].point.clone().normalize();
+  //   var u = Math.atan2(normalizedPoint.x, normalizedPoint.z) / (2 * Math.PI) + 0.5;
+  //   var v = Math.asin(normalizedPoint.y) / Math.PI + 0.5;
 
-    this.plotIn3D(intersects[0].point);
-    this.plotOnTexture(intersects[0].point);
-    //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
-  }
+  //   this.plotIn3D(intersects[0].point);
+  //   this.plotOnTexture(intersects[0].point);
+  //   //console.log('intersect: ' + intersects[0].point.x.toFixed(2) + ', ' + intersects[0].point.y.toFixed(2) + ', ' + intersects[0].point.z.toFixed(2) + ')');
+  // }
 
 }
 
