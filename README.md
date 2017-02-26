@@ -1,4 +1,4 @@
-# Smogg
+# Ssmog
 
 Description
 * Adapted **Google Maps Api** to similuate a virtual environment on web browser
