@@ -16,7 +16,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
   <link rel="image_src" href="http://inear.se/urbanjungle/assets/images/urbanjungle.jpg"/>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
   <!-- @if NODE_ENV='dev' -->
@@ -31,9 +31,13 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script>
-    $( function() {
-      $( "#smilevideo" ).draggable();
-    } );
+    var toShow = true;
+    $(document).keydown(function(keyEvent) {
+        if(keyEvent.keyCode == 13){
+            $('#smilevideo').toggle(toShow);
+            toShow = !toShow;
+        }
+    });
   </script>
 </head>
 <body>
