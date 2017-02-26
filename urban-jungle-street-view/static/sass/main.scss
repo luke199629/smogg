@@ -129,7 +129,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
+
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
@@ -198,8 +198,8 @@
       height: 100px;
       width: 100px;
       padding:50px;
-      -webkit-border-radius: 50%; 
-      -moz-border-radius: 50%; 
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
       border-radius: 50%;
     }
 
@@ -281,7 +281,7 @@
 }
 
 .pegman-draggable {
-  position:relative; 
+  position:relative;
   pointer-events:auto;
 //
 //  width:50px;
@@ -521,9 +521,9 @@ aside.sticker:after {
 
 aside.sticker.green {
   color: white;
-  background-image: -webkit-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
-  background-image: -moz-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
-  background-image: -o-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+  background-image: -webkit-linear-gradient(135deg, transparent 32px, #ef7373 20px, #70c757);
+  background-image: -moz-linear-gradient(135deg, transparent 32px, #ef7373 20px, #70c757);
+  background-image: -o-linear-gradient(135deg, transparent 32px, #ef7373 20px, #70c757);
 }
 
 .info-block {
@@ -588,11 +588,11 @@ aside.sticker.green {
 
     a {
       text-decoration: none;
-      color: #006943;
+      color: #ef7373;
       font-weight: bold;
 
       &:active {
-        color: #006943;
+        color: #ef7373;
 
       }
     }
