@@ -26,7 +26,6 @@
     .intro-header {
 
       font-family: $header-font;
-      text-transform: uppercase;
 
       left: 50%;
       @include transform(translateX(-50%));
