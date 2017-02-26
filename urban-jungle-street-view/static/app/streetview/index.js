@@ -341,15 +341,16 @@ p.init3D = function(){
   this.scene.add(this.ground);
 
   // create the particle variables
-var particleCount = 4800,
+var particleCount = 12800,
     particles = new THREE.Geometry(),
     pMaterial = new THREE.ParticleBasicMaterial({
       size: 20,
       map: THREE.ImageUtils.loadTexture(
-          "images/fog.png"
+          "images/fogg.png"
       ),
       blending: THREE.AdditiveBlending,
-      transparent: true
+      transparent: true,
+      opacity: 0.1
   });
 
 // now create the individual particles
@@ -957,7 +958,7 @@ p.render = function(){
 
   this.time += 0.01;
 
- particleSystem.rotation.y += 0.001;
+ particleSystem.rotation.y += 0.0001;
 
   //console.log(delta);
 }
