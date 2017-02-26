@@ -69,7 +69,7 @@ $('#choice-default-2').on('click', function(){
 
 $('#choice-default-3').on('click', function(){
   event.preventDefault();
-  var to = new google.maps.LatLng(59.3346806,18.0621834)
+  var to = new google.maps.LatLng(40.113824,-88.224076)
   map.panTo( to );
 })
 

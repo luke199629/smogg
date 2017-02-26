@@ -40,7 +40,7 @@ p.createArrows = function(){
   markerGeo.applyMatrix(new THREE.Matrix4().makeTranslation(0,-2,5));
 
   var marker = new THREE.Mesh( markerGeo, new THREE.MeshBasicMaterial({color:0xff0000,visible:false}));
-  var arrow = new THREE.Mesh( arrowGeo,new THREE.MeshLambertMaterial({map: tex, wireframe:false,color:0x666666,ambient:0x333333}));
+  var arrow = new THREE.Mesh( arrowGeo,new THREE.MeshLambertMaterial({map: tex, wireframe:true,color:0x666666,ambient:0x333333}));
   arrow.name = 'arrow';
   //shadows
   shadowTex = THREE.ImageUtils.loadTexture( imageFolder + 'arrow-shadow.png' );
