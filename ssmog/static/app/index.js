@@ -808,7 +808,7 @@ _depthLoader.onDepthLoad = function( buffers ) {
 
   pano.setLinks(self.links, self.centerHeading );
 
-  $smilevideo.removeClass('inactive');
+  // $smilevideo.removeClass('inactive');
 }
 
 window.addEventListener('resize',onResize);

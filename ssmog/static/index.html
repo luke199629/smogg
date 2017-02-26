@@ -45,7 +45,7 @@
   <aside class="js-more-info more-info sticker blue">Info</aside>
 
   <div id="smilevideo" class="sticker inactive">
-      <iframe src="http://localhost:8000/track/examples/clm_emotiondetection.html" scrolling="no" width="400" height="300"></iframe>
+      <iframe id="emoframe" src="http://localhost:8000/track/examples/clm_emotiondetection.html" scrolling="no" width="400" height="300"></iframe>
   </div>
 
   <div id="info" class="info-block">
@@ -56,6 +56,15 @@
       <h1></h1>
       <p><img src="assets/images/pegman.png" align="left">Visit any place available in Street View by entering a location, drag the map to browse around and drop the little guy on a road. It works best in environment with large buildings surrounding the streets. Some locations need a little more imagination than others.</p>
       <p>This experiment using an undocumented part of Street View, the depth data. With that a depth map and a normal map is generated, which can be used in the shaders and to plot geometry and sprites in (almost) the correct position in 3d space.</p>
+      <p>Start the smiling detector; Press Enter to toggle show/hide</p>
+      <button onclick="startvideo()">Start</button>
+      <script type="text/javascript">
+        function startvideo(){
+          document.getElementById('emoframe').contentWindow.startVideo();
+          $('#smilevideo').toggle(true);
+        }
+      </script>
+      <!-- <input type="submit" value="Start"> -->
       <p>
       Tech used in the demo:
       <ul>
