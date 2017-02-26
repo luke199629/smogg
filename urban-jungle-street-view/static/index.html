@@ -16,6 +16,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
   <link rel="image_src" href="http://inear.se/urbanjungle/assets/images/urbanjungle.jpg"/>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
   <!-- @if NODE_ENV='dev' -->
@@ -26,7 +27,14 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- @endif -->
 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <script>
+    $( function() {
+      $( "#smilevideo" ).draggable();
+    } );
+  </script>
 </head>
 <body>
 
@@ -35,21 +43,6 @@
   <div id="smilevideo" class="sticker inactive">
       <iframe src="http://localhost:8000/track/examples/clm_emotiondetection.html" scrolling="no" width="400" height="300"></iframe>
   </div>
-
-  <script type="text/javascript">
-    function checksmile(value){
-      if (value > 0.8){
-        console.log(value);
-      }
-    }
-  </script>
-  <script>
-      $(function () {
-            $("#smilevideo")
-                .resizable()
-                .draggable();           
-        });
-  </script>
 
   <div id="info" class="info-block">
     <div class="info-content">
@@ -127,7 +120,7 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5vWcbVX5PnXbGaKCPfrkn0Vnd0mniupI&v=3.exp&sensor=false" type="text/javascript"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script>window.jQuery || document.write('<script src="vendors/jquery-2.0.3.js"><\/script>')</script>
   <!--<script src='http://s3.amazonaws.com/urbanjungle/javascript/scripts.js'></script>-->
 
@@ -148,5 +141,17 @@
   <script src="vendors/zpipe.min.js" type="text/javascript"></script>
 
   <script>require('urbanjungle');</script>
+
+  <script type="text/javascript">
+    var smilevalue;
+    function checksmile(value){
+      if (value > 0.8){
+        console.log(value);
+        smilevalue = value;
+        // $('#pegman').show();
+        alert("Smile Detected!");
+      }
+    }
+  </script>
 
 </html>
