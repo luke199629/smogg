@@ -3,7 +3,7 @@
 Description
 * Adapted **Google Maps Api** to similuate a virtual environment on web browser
 * Utilize **Google Search Engine** to place your self anywhere you want
-* Illustrate haze on a web page
+* Illustrate smog on a web page
 * Display street views provided by Google Maps
 * Apply **face recognition** to detect smily face
 
