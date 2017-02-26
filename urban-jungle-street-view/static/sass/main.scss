@@ -471,8 +471,9 @@
   cursor:pointer;
   position:absolute;
   z-index:11;
-  right:0px;
-  margin:20px;
+
+  left:30% !important;
+  top:30% !important;
 
   @media all and (min-width: 0px) and (max-width:500px) {
     margin:0px;
