@@ -14,10 +14,10 @@ Description
 * Understand the crucial problem of haze existing in China cities
 
 ## BUILD/INSTALLATION INSTRUCTIONS
-* [PLATFORM 1]
-* [BUILD EXAMPLE]
-* [PLATFORM 2]
-* [BUILD EXAMPLE]
+* You need to have installed npm, ruby, compass and grunt as well.
+* Go into the ssmog directory, and do `npm install`, followed by `grunt`.
+* Open firefox and direct to `http://localhost:8000/ssmog/static/index.html`.
+* Have fun!
 
 ## [INTERFACES] _(if applicable)_ 
 
