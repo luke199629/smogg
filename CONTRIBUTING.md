@@ -1,31 +1,31 @@
-#Contibuting to [PROJECT]
+#Contibuting to SMOGG
 
 ## Welcome contributors to the project: 
 
 ## Short Links to Important Resources:
-* docs: handbook / roadmap (you'll learn more about this in the roadmapping session)
-* bugs: issue tracker / bug report tool
-* communcations: forum link, developer list, IRC/email, Slack, etc.
+* docs: N/A
+* bugs: N/A
+* communcations: N/A
 ## Testing
 ## Development environment details
 
 ## How to submit changes: Pull Request protocol etc. 
-_What people might expect in a response from the core devs_ 
+_You can just submit pull request and we will take care of it._ 
 
 ## How to report a bug: 
 * Templates: 
-  * _What to include in a bug report_
+  * _N/A_
 * First bugs for Contributors
-  * _What would be good bugs to start with?_
+  * _N/A_
     
 ## New Feature Requirements
-_Any guidelines for proposing the feature_
+_Anything innovative._
 
 ## Style Guide / Coding conventions 
 
 ## Code of Conduct
 
 ## Recognition model
-_How will contributors be recognized?_
+_We will send you thank you emails._
 
 ## Where can I ask for help?
