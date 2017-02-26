@@ -11,7 +11,7 @@ Description
 
 ## Usage or Goal
 * Allow other people to have a sense of haze
-* Understand the crucial problem of haze existed in China cities
+* Understand the crucial problem of haze existing in China cities
 
 ## BUILD/INSTALLATION INSTRUCTIONS
 * [PLATFORM 1]
@@ -24,8 +24,8 @@ Description
 ## OTHER SOURCES OF DOCUMENTATION
 
 ## Contributor Guide
-Icon Designer: **CiCi Ma**
 
-[LINK TO CONTRIBUTING.md]
+[CONTRIBUTING](CONTRIBUTING.md)
 
-## License 
+## License
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
