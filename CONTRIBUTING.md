@@ -6,8 +6,7 @@
 * docs: N/A
 * bugs: N/A
 * communcations: N/A
-## Testing
-## Development environment details
+
 
 ## How to submit changes: Pull Request protocol etc. 
 _You can just submit pull request and we will take care of it._ 
