@@ -26,6 +26,7 @@ var $introContent = $('.js-intro-content');
 var $loadingLabel = $('.js-loading-label');
 var $dragHideLayers = $('.js-drag-hide');
 var $streetviewTile = $('.js-streetview-layer-tile');
+var $smilevideo = $('#smilevideo');
 
 var streetviewCanvas = document.createElement('canvas');
 var streetViewTileData;
@@ -51,6 +52,7 @@ $('#backToMap').on('click touchstart', function(){
   pegmanTalk(TALK_DEFAULT);
 
   backToMap();
+  
 
 })
 
@@ -108,6 +110,7 @@ function backToMap() {
       showMap();
     });
     pano.transitionOut();
+    $smilevideo.removeClass('inactive');
 
     TweenLite.set($pegman, {x:0,y:0});
   }
@@ -123,6 +126,8 @@ function backToMap() {
     $dragHideLayers.fadeIn();
     $pegman.removeClass('dragging');
     $pegman.removeClass('over-road');
+
+    $smilevideo.addClass('inactive');
   }
 
 }
@@ -694,9 +699,6 @@ function findAddress( address ) {
     }
   });
 }
-
-
-
 
 _panoLoader.onPanoramaLoad = function() {
 
