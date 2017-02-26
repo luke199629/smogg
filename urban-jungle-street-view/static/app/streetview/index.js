@@ -7,6 +7,8 @@ var DEG_TO_RAD = Math.PI/180;
 var MAP_WIDTH = 512;
 var MAP_HEIGHT = 256;
 
+var particleSystem;
+
 var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
 // var imageFolder = '/Users/Luke/Documents/smogg/urban-jungle-street-view/static/assets/images/';
 //var shaderPath = 'http://s3.amazonaws.com/urbanjungle/shaders/';
@@ -337,6 +339,48 @@ p.init3D = function(){
   this.ground.rotation.x = Math.PI*-0.5;
   this.ground.position.y = -20;
   this.scene.add(this.ground);
+
+  // create the particle variables
+var particleCount = 4800,
+    particles = new THREE.Geometry(),
+    pMaterial = new THREE.ParticleBasicMaterial({
+      size: 20,
+      map: THREE.ImageUtils.loadTexture(
+          "images/fog.png"
+      ),
+      blending: THREE.AdditiveBlending,
+      transparent: true
+  });
+
+// now create the individual particles
+for (var p = 0; p < particleCount; p++) {
+
+  // create a particle with random
+  // position values, -250 -> 250
+  var pX = Math.random() * 500 - 250,
+      pY = Math.random() * 500 - 250,
+      pZ = Math.random() * 500 - 250,
+      particle = new THREE.Vertex(
+        new THREE.Vector3(pX, pY, pZ)
+      );
+
+  // add it to the geometry
+  particles.vertices.push(particle);
+}
+
+// create the particle system
+    particleSystem = new THREE.ParticleSystem(
+    particles,
+    pMaterial);
+
+// add it to the scene
+  this.scene.add(particleSystem);
+
+  // also update the particle system to
+// sort the particles which enables
+// the behaviour we want
+particleSystem.sortParticles = true;
+
 
   // //tree
   // var treeTex = THREE.ImageUtils.loadTexture( imageFolder + 'tree.png' );
@@ -913,10 +957,11 @@ p.render = function(){
 
   this.time += 0.01;
 
+ particleSystem.rotation.y += 0.001;
 
   //console.log(delta);
-
 }
+
 
 p.testMouseOverObjects = function(){
 
