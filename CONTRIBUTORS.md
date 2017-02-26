@@ -17,7 +17,7 @@ Jason Situ (junsitu2)<br />
 Implemented the smog visual feature<br />
 Implemented the User Interface
 
-Lingzhi Chu<br />
+Lingzhi Chu (lchu3)<br />
 Implemented the smog visual feature<br />
 Implemented the User Interface
 
