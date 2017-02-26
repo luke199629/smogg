@@ -14,7 +14,7 @@ var pegmanTimeout;
 var depthCanvas;
 var normalCanvas;
 
-var TALK_DEFAULT = 'Choose your location, pan around, and then pick me up!';
+var TALK_DEFAULT = 'Choose your location, pan around, and then pick me up! Use your smile to reduce the smog!';
 
 var $streetview = $('.streetview');
 var $pegman = $('#pegman');
@@ -53,7 +53,7 @@ $('#backToMap').on('click touchstart', function(){
 
   backToMap();
   
-
+  $smilevideo.addClass('inactive');
 })
 
 $('#choice-default-1').on('click', function( event ){
@@ -74,7 +74,6 @@ $('#choice-default-3').on('click', function(){
   var to = new google.maps.LatLng(40.113824,-88.224076)
   map.panTo( to );
 })
-
 
 $('#choice-location').on('click', function(){
   event.preventDefault();
@@ -110,7 +109,6 @@ function backToMap() {
       showMap();
     });
     pano.transitionOut();
-    $smilevideo.removeClass('inactive');
 
     TweenLite.set($pegman, {x:0,y:0});
   }
@@ -126,8 +124,6 @@ function backToMap() {
     $dragHideLayers.fadeIn();
     $pegman.removeClass('dragging');
     $pegman.removeClass('over-road');
-
-    $smilevideo.addClass('inactive');
   }
 
 }
@@ -812,6 +808,7 @@ _depthLoader.onDepthLoad = function( buffers ) {
 
   pano.setLinks(self.links, self.centerHeading );
 
+  // $smilevideo.removeClass('inactive');
 }
 
 window.addEventListener('resize',onResize);

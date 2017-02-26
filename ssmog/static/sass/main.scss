@@ -486,6 +486,10 @@
 
 }
 
+.tofront{
+  z-index: 10000;
+}
+
 #smilevideo {
   cursor:pointer;
   z-index:11;
