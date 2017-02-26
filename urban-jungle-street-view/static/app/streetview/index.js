@@ -6,13 +6,9 @@ var detector = require('./utils/detector');
 var DEG_TO_RAD = Math.PI/180;
 var MAP_WIDTH = 512;
 var MAP_HEIGHT = 256;
-
 var particleSystem;
 
 var imageFolder = 'http://s3.amazonaws.com/urbanjungle/images2/';
-// var imageFolder = '/Users/Luke/Documents/smogg/urban-jungle-street-view/static/assets/images/';
-//var shaderPath = 'http://s3.amazonaws.com/urbanjungle/shaders/';
-//var imageFolder = 'assets/images/'
 
 module.exports = PanoView;
 
@@ -330,7 +326,7 @@ p.init3D = function(){
   this.scene.add(this.foliageContainer);
 
   //ground
-  var mossTile = THREE.ImageUtils.loadTexture( "http://luke1996.com/wp-content/uploads/2017/02/road.jpg" );
+  var mossTile = THREE.ImageUtils.loadTexture( "https://ygwoelf.github.io/images/road.jpg" );
   mossTile.repeat.set(200,200);
   mossTile.wrapS = mossTile.wrapT = THREE.RepeatWrapping;
   mossTile.needsUpdate = true;
