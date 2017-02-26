@@ -1,3 +1,4 @@
+**Contributors**<br />
 Yihuan Guo (yguo42)<br />
 Devised the idea for this project of smog experiencing<br />
 Modified open source API to work locally<br />
