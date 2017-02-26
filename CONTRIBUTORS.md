@@ -1,4 +1,5 @@
 **Contributors**<br />
+<br />
 Yihuan Guo (yguo42)<br />
 Devised the idea for this project of smog experiencing<br />
 Modified open source API to work locally<br />
@@ -21,9 +22,9 @@ Implemented the smog visual feature<br />
 Implemented the User Interface
 
 Xiaoxin Ma <br />
-Designed User Interface
+Designed User Interface<br />
 
-Citation:<br />
+**Citation**:<br />
 Einar Öberg<br />
 Urban Jungle Street View<br />
 https://github.com/inear/urban-jungle-street-view.git<br />
