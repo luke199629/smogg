@@ -2,10 +2,10 @@
 
 Description
 * Adapted **Google Maps Api** to similuate a virtual environment on web browser
-* Utilize **Google Search Engine** to place your self anywhere you want
-* Illustrate smog on a web page
-* Display street views provided by Google Maps
-* Apply **face recognition** to detect smily face
+* Utilized visualized **Google Search Engine** to place your self anywhere you want
+* Illustrated smog on a web page
+* Displayed street views provided by Google Maps
+* Applied **face recognition** to detect smily face
 
 
 
