@@ -10,8 +10,8 @@ Description
 
 
 ## Usage or Goal
-* Allow other people to have a sense of haze
-* Understand the crucial problem of haze existing in China cities
+* Allow other people to have a sense of smog
+* Understand the crucial problem of smog existing in China cities
 
 ## BUILD/INSTALLATION INSTRUCTIONS
 * You need to have installed npm, ruby, compass and grunt as well.
