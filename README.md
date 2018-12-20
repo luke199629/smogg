@@ -1,32 +1,29 @@
-# Ssmog
+# [Smoog]
 
 Description
 * Adapted **Google Maps Api** to similuate a virtual environment on web browser
-* Utilized visualized **Google Search Engine** to place your self anywhere you want
-* Illustrated smog on a web page
-* Displayed street views provided by Google Maps
+* Utilize **Google Search Engine** to place your self anywhere you want
+* Simulate haze anyplace around the wrond
+* View any street views provided by Google Maps
 * Applied **face recognition** to detect smily face
 
 
 
-## Usage or Goal
-* Help people have a sense of smog
-* Understand the crucial problem of smog existing in China cities
-* Alert people about the importance of preserving our environment
+## USAGE
+* Allow other people to have a sense of haze
+* Understand the crucial problem of haze existed in China cities
 
 ## BUILD/INSTALLATION INSTRUCTIONS
-* You need to have installed npm, ruby, compass and grunt.
-* Go into the ssmog directory, and do `npm install`, followed by `grunt`.
-* Open firefox and direct to `http://localhost:8000/ssmog/static/index.html`.
-* Have fun!
+* [PLATFORM 1]
+* [BUILD EXAMPLE]
+* [PLATFORM 2]
+* [BUILD EXAMPLE]
 
 ## [INTERFACES] _(if applicable)_ 
 
 ## OTHER SOURCES OF DOCUMENTATION
 
 ## Contributor Guide
+[LINK TO CONTRIBUTING.md]
 
-[CONTRIBUTING](CONTRIBUTING.md)
-
-## License
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
+## License 
